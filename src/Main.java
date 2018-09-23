@@ -2,8 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-        System.out.println("Andrez er gud. en GRÆSK gud.");
+        System.out.println("Hello Andrez!");
 
 
     }
