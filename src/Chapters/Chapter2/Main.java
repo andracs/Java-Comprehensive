@@ -330,7 +330,7 @@ public class Main {
 
         System.out.printf("bmi = %f\n", bmi);*/
 
-        // opgave 2.15
+/*        // opgave 2.15
         System.out.println("\n----\nOPGAVE 2.15:");
 
         double x1, x2, y1, y2;
@@ -341,7 +341,183 @@ public class Main {
         x2 = 4;
         y2 = 5;
 
-        System.out.println(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
+        System.out.println(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));*/
+
+        /*2.16 (Geometry: area of a hexagon) Write a program that prompts the user to enter the
+        side of a hexagon and displays its area. The formula for computing the area of a
+        hexagon is*/
+
+        /*System.out.println("\n----\nOPGAVE 2.16:");
+        inputObj = new Scanner(System.in);
+        System.out.println("enter the side lenght of the hexagon: ");
+        double side_lenght = inputObj.nextDouble();
+
+        double Area = ( (3 * Math.sqrt(3)) / 2 ) * Math.pow(side_lenght,2);
+
+        System.out.println(Area);*/
+
+        /*2.17 (Science: wind-chill temperature) How cold is it outside? The temperature alone
+         is not enough to provide the answer. Other factors including wind speed, relative
+         humidity, and sunshine play important roles in determining coldness outside.
+         In 2001, the National Weather Service (NWS) implemented the new wind-chill
+         temperature to measure the coldness using temperature and wind speed. The
+         formula is*/
+
+/*        System.out.println("\n----\nOPGAVE 2.17:");
+        inputObj = new Scanner(System.in);
+
+        double Twc;
+        double Ta;
+        double v;
+
+        System.out.println("Enter the temperature in Fahrenheit between -58°F and 41°F:");
+        Ta = inputObj.nextDouble();
+
+        System.out.println("Enter the wind speed (>=2) in miles per hour:");
+        v = inputObj.nextDouble();
+
+        Twc = 35.74 + 0.6215*Ta - 35.75*Math.pow(v,0.16) + 0.4275 * Ta * Math.pow(v,0.16) ;
+
+        System.out.printf("The wind chill index %f\n", Twc);*/
+
+        /*2.18 (Print a table) Write a program that displays the following table. Cast floatingpoint
+        numbers into integers.*/
+
+        /*System.out.println("a\tb\tpow(a, b)");
+        for(int i = 1; i <= 5; i++){
+            System.out.printf("%d\t%d\t%.0f\n", i, i+1, Math.pow(i, i+1));
+        }*/
+
+        /*2.19 (Geometry: area of a triangle) Write a program that prompts the user to enter
+        three points (x1, y1), (x2, y2), (x3, y3) of a triangle and displays its area.
+        The formula for computing the area of a triangle is*/
+/*        inputObj = new Scanner(System.in);
+
+        String triangle_raw = inputObj.nextLine();
+        String[] triangle_splitted = triangle_raw.split(" ");
+
+        double x1 = Double.parseDouble(triangle_splitted[0]);
+        double y1 = Double.parseDouble(triangle_splitted[1]);
+
+        double x2 = Double.parseDouble(triangle_splitted[2]);
+        double y2 = Double.parseDouble(triangle_splitted[3]);
+
+        double x3 = Double.parseDouble(triangle_splitted[4]);
+        double y3 = Double.parseDouble(triangle_splitted[5]);
+
+        double side1 = calcPointDistance(x1,y1, x2,y2);
+        double side2 = calcPointDistance(x2,y2, x3,y3);
+        double side3 = calcPointDistance(x3,y3, x1,y1);
+
+        double s =(side1+side2+side3)/2;
+        double area = Math.sqrt( s*(s-side1) * (s-side2) * (s-side3) );
+
+        System.out.printf("The area of the triangle is %f\n", area);*/
+
+        /*2.20 (Financial application: calculate interest) If you know the balance and the annual
+        percentage interest rate, you can compute the interest on the next monthly payment
+        using the following formula:
+
+        interest = balance * (annualInterestRate/1200)
+
+        Write a program that reads the balance and the annual percentage interest rate and
+        displays the interest for the next month.*/
+
+/*        System.out.println(1000*(3.5/1200));
+
+        String balance_interest_raw = inputObj.nextLine();
+        String[] balance_interest_splitted = balance_interest_raw.split(" ");
+
+        double balance = Double.parseDouble(balance_interest_splitted[0]);
+        double annualInterestRate = Double.parseDouble(balance_interest_splitted[1]);
+
+        double interest = balance*(annualInterestRate/1200);
+
+        System.out.printf("the interst is %f\n", interest);*/
+
+        /*2.21 (Financial application: calculate future investment value) Write a program that
+        reads in investment amount, annual interest rate, and number of years, and displays
+        the future investment value using the following formula:*/
+
+/*        inputObj = new Scanner(System.in);
+
+        System.out.println("Enter investment amount: ");
+        double investmentAmount = inputObj.nextDouble();
+
+        System.out.println("Enter annual interest rate in percentage: ");
+        double monthlyInterestRate = inputObj.nextDouble() / 1200;
+
+        System.out.println("Enter number of years: ");
+        double numberOfYears = inputObj.nextDouble();
+
+        double futureInvestmentValue = investmentAmount * Math.pow((1 + monthlyInterestRate),numberOfYears*12);
+
+        System.out.printf("Accumulated value is $%f\n",futureInvestmentValue);*/
+
+        /*2.22 (Financial application: monetary units) Rewrite Listing 2.10, ComputeChange
+        .java, to fix the possible loss of accuracy when converting a double value to an
+        int value. Enter the input as an integer whose last two digits represent the cents.
+        For example, the input 1156 represents 11 dollars and 56 cents.*/
+
+/*        inputObj = new Scanner(System.in);
+
+        // Receive the amount
+        System.out.println("Enter an amount in double, for example 11.56: ");
+        int amount = inputObj.nextInt();
+
+        int remainingAmount = amount;
+
+        // Find the number of one dollars
+        int numberOfOneDollars = remainingAmount / 100;
+        remainingAmount = remainingAmount % 100;
+
+        // Find the number of quarters in the remaining amount
+        int numberOfQuarters = remainingAmount / 25;
+        remainingAmount = remainingAmount % 25;
+
+        // Find the number of dimes in the remaining amount
+        int numberOfDimes = remainingAmount / 10;
+        remainingAmount = remainingAmount % 10;
+
+        // Find the number of nickels in the remaining amount
+        int numberOfNickels = remainingAmount / 5;
+        remainingAmount = remainingAmount % 5;
+
+        // Find the number of pennies in the remaining amount
+        int numberOfPennies = remainingAmount;
+
+        // Display results
+        System.out.println("Your amount " + amount + " consists of");
+        System.out.println("    " + numberOfOneDollars + " dollars");
+        System.out.println("    " + numberOfQuarters + " quarters ");
+        System.out.println("    " + numberOfDimes + " dimes");
+        System.out.println("    " + numberOfNickels + " nickels");
+        System.out.println("    " + numberOfPennies + " pennies");*/
+
+        /*2.23 (Cost of driving) Write a program that prompts the user to enter the distance to
+        drive, the fuel efficiency of the car in miles per gallon, and the price per gallon,
+        and displays the cost of the trip.*/
+
+/*        inputObj = new Scanner(System.in);
+
+        System.out.println("Enter the driving distance: ");
+        double distance = inputObj.nextDouble();
+
+        System.out.println("Enter miles per gallon: ");
+        double mpg = inputObj.nextDouble();
+
+        System.out.println("Enter price per gallon: ");
+        double gallon_price = inputObj.nextDouble();
+
+        double price = (distance/mpg)*gallon_price;
+
+        System.out.printf("The cost of driving is $%.2f\n",price);*/
+
+    }
+
+    private static double calcPointDistance(double x1, double y1, double x2, double y2 ){
+
+        return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 
     }
 
