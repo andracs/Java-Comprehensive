@@ -4,10 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // opgave 1.3
+        ///////////////////////////////////
+        // opgave 1.3                    //
+        ///////////////////////////////////
         System.out.println("OPGAVE 1.3:");
         System.out.println( "   J     A     V     V     A\n   J    A A     V   V     A A\nJ  J   AAAAA     V V     AAAAA\n JJ   A     A     V     A     A");
-        // opgave 1.4
+
+        ///////////////////////////////////
+        // opgave 1.4                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.4:");
 
         System.out.println("A\tA^2\tA^3\tA^4");
@@ -17,12 +22,16 @@ public class Main {
 
         }
 
-        // opgave 1.5
+        ///////////////////////////////////
+        // opgave 1.5                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.5:");
 
         System.out.println((9.5*4.5-2.5*3)/(45.5-3.5));
 
-        // opgave 1.6
+        ///////////////////////////////////
+        // opgave 1.6                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.6:");
 
         int sum1dot6 = 0;
@@ -35,7 +44,9 @@ public class Main {
 
         System.out.println(sum1dot6);
 
-        // opgave 1.7
+        ///////////////////////////////////
+        // opgave 1.7                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.7:");
 
         double calculatePI = 0;
@@ -62,7 +73,9 @@ public class Main {
         System.out.println(4. * (1 - 1./3 + 1./5 - 1./7 + 1./9 - 1./11) );
         System.out.println(4. * (1 - 1./3 + 1./5 - 1./7 + 1./9 - 1./11 + 1./13) );
 
-        // opgave 1.8
+        ///////////////////////////////////
+        // opgave 1.8                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.8:");
 
         double perimeter1dot8 = 2 * 5.5 * Math.PI;
@@ -70,12 +83,16 @@ public class Main {
 
         System.out.printf("perimeter: %f, area: %f\n", perimeter1dot8, area1dot8);
 
-        // opgave 1.9
+        ///////////////////////////////////
+        // opgave 1.9                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.9:");
 
         System.out.printf("area = %f\nperimeter = %f", 4.5*7.9, 2*(4.5+7.9));
 
-        // opgave 1.10
+        ///////////////////////////////////
+        // opgave 1.10                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.10:");
 
         // convert km to miles
@@ -83,7 +100,9 @@ public class Main {
 
         System.out.printf( "%.2f mph\n", (miles1DOT10/45.5)*60 );
 
-        // opgave 1.11
+        ///////////////////////////////////
+        // opgave 1.11                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.11:");
 
         int secondsPerDay = 60*60*24;
@@ -111,7 +130,9 @@ public class Main {
 
         }
 
-        // opgave 1.12
+        ///////////////////////////////////
+        // opgave 1.12                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.12:");
 
         double kilometer1DOT12 = 24 * 1.6;
@@ -122,7 +143,9 @@ public class Main {
 
         System.out.println( (kilometer1DOT12/timeInSeconds1DOT12) * 60 * 60 );
 
-        // opgave 1.13
+        ///////////////////////////////////
+        // opgave 1.13                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 1.13:");
 
         Cramers CramersObj = new Cramers(3.4, 50.2, 2.1, .55, 44.5, 5.9);

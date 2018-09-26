@@ -6,116 +6,130 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // opgave 2.1
-        // System.out.println("OPGAVE 2.1:");
+        ///////////////////////////////////
+        // opgave 2.1                    //
+        ///////////////////////////////////
+        System.out.println("OPGAVE 2.1:");
 
         Scanner inputObj = new Scanner(System.in);
 
-        // System.out.println("Enter a degree in Celsius: ");
+        System.out.println("Enter a degree in Celsius: ");
 
-        // double celsius = inputObj.nextDouble();
+        double celsius = inputObj.nextDouble();
 
-        // double fahrenheit = celsius * 9.0/5 + 32;
+        double fahrenheit = celsius * 9.0/5 + 32;
 
-        // System.out.printf("%f Celsius is %f Fahrenheit", celsius, fahrenheit);
+        System.out.printf("%f Celsius is %f Fahrenheit", celsius, fahrenheit);
 
-        // // opgave 2.2
-        // System.out.println("\n----\nOPGAVE 2.2:");
+        ///////////////////////////////////
+        // opgave 2.2                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.2:");
 
-        // inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
-        // System.out.println("Enter the radius and length of a cylinder: ");
+        System.out.println("Enter the radius and length of a cylinder: ");
 
-        // String twoDotTwoInput = inputObj.nextLine();
-        // String[] twoDotTwoInputSplit = twoDotTwoInput.split(" ");
+        String twoDotTwoInput = inputObj.nextLine();
+        String[] twoDotTwoInputSplit = twoDotTwoInput.split(" ");
 
-        // double radius = Double.parseDouble(twoDotTwoInputSplit[0]);
-        // double length = Double.parseDouble(twoDotTwoInputSplit[1]);
+        double radius = Double.parseDouble(twoDotTwoInputSplit[0]);
+        double length = Double.parseDouble(twoDotTwoInputSplit[1]);
 
-        // double area = radius * radius * Math.PI;
-        // double volume = area * length;
+        double area = radius * radius * Math.PI;
+        double volume = area * length;
 
-        // System.out.printf("The area is %f\nThe volume is %f\n", area, volume);
+        System.out.printf("The area is %f\nThe volume is %f\n", area, volume);
 
-        // System.out.println(twoDotTwoInput);
+        System.out.println(twoDotTwoInput);
 
-        // // opgave 2.3
-        // System.out.println("\n----\nOPGAVE 2.3:");
+        ///////////////////////////////////
+        // opgave 2.3                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.3:");
 
-        // inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
-        // System.out.println("Enter a value for feet: ");
-        // double feet = inputObj.nextDouble();
-        // double meters = feet * 0.305;
+        System.out.println("Enter a value for feet: ");
+        double feet = inputObj.nextDouble();
+        double meters = feet * 0.305;
 
-        // System.out.printf("%f feet is %f meters", feet, meters);
+        System.out.printf("%f feet is %f meters", feet, meters);
 
-        // opgave 2.4
-        // System.out.println("\n----\nOPGAVE 2.4:");
+        ///////////////////////////////////
+        // opgave 2.4                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.4:");
 
-        // inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
-        // System.out.println("Enter a number in pounds: ");
-        // double pounds = inputObj.nextDouble();
-        // double kilograms = pounds * .454;
+        System.out.println("Enter a number in pounds: ");
+        double pounds = inputObj.nextDouble();
+        double kilograms = pounds * .454;
 
-        // System.out.printf("%f pounds is %f kilograms", pounds, kilograms);
+        System.out.printf("%f pounds is %f kilograms", pounds, kilograms);
 
-        // opgave 2.5
-        // System.out.println("\n----\nOPGAVE 2.5:");
+        ///////////////////////////////////
+        // opgave 2.5                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.5:");
 
-        // inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
-        // System.out.println("Enter the subtotal and a gratuity rate: ");
+        System.out.println("Enter the subtotal and a gratuity rate: ");
 
-        // String twoDotFiveInput = inputObj.nextLine();
-        // String[] twoDotTwoInputSplit = twoDotFiveInput.split(" ");
+        String twoDotFiveInput = inputObj.nextLine();
+        String[] twoDotTwoInputSplit = twoDotFiveInput.split(" ");
 
-        // double subtotal = Double.parseDouble(twoDotTwoInputSplit[0]);
-        // double gratuityRate = Double.parseDouble(twoDotTwoInputSplit[1]);
+        double subtotal = Double.parseDouble(twoDotTwoInputSplit[0]);
+        double gratuityRate = Double.parseDouble(twoDotTwoInputSplit[1]);
 
-        // double gratuity = (gratuityRate/100)*subtotal;
-        // double total = subtotal+gratuity;
+        double gratuity = (gratuityRate/100)*subtotal;
+        double total = subtotal+gratuity;
 
-        // System.out.printf("The gratuity is $%f and total is $%f", gratuity, total);
+        System.out.printf("The gratuity is $%f and total is $%f", gratuity, total);
 
-        // opgave 2.6
-//        System.out.println("\n----\nOPGAVE 2.6:");
-//
-//        inputObj = new Scanner(System.in);
-//        System.out.println("Enter a number between 0 and 1000:");
-//        int integer = inputObj.nextInt();
-//
-//        int sum;
-//
-//        if(integer < 10){ // integer has only 1 integer
-//
-//            System.out.printf("The sum of the digits is %d", integer);
-//
-//        }else if(integer < 100){ // integer has only 10 integer
-//
-//            sum = integer % 10;
-//            integer = integer / 10;
-//            sum = sum + integer;
-//
-//            System.out.printf("The sum of the digits is %d", sum);
-//
-//        }else if(integer < 1000){ // integer has only 100 integer
-//
-//            sum = integer % 10;
-//            integer = integer / 10;
-//
-//            sum = sum + (integer % 10);
-//            integer = integer / 10;
-//            sum = sum + integer;
-//
-//            System.out.printf("The sum of the digits is %d", sum);
-//
-//        }else{ // this number must be 1000 and the result would be 1.
-//            System.out.println("The sum of the digits is 1");
-//        }
-/*
-        // opgave 2.7
+        ///////////////////////////////////
+        // opgave 2.6                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.6:");
+
+        inputObj = new Scanner(System.in);
+        System.out.println("Enter a number between 0 and 1000:");
+        int integer = inputObj.nextInt();
+
+        int sum;
+
+        if(integer < 10){ // integer has only 1 integer
+
+            System.out.printf("The sum of the digits is %d", integer);
+
+        }else if(integer < 100){ // integer has only 10 integer
+
+            sum = integer % 10;
+            integer = integer / 10;
+            sum = sum + integer;
+
+            System.out.printf("The sum of the digits is %d", sum);
+
+        }else if(integer < 1000){ // integer has only 100 integer
+
+            sum = integer % 10;
+            integer = integer / 10;
+
+            sum = sum + (integer % 10);
+            integer = integer / 10;
+            sum = sum + integer;
+
+            System.out.printf("The sum of the digits is %d", sum);
+
+        }else{ // this number must be 1000 and the result would be 1.
+            System.out.println("The sum of the digits is 1");
+        }
+
+        ///////////////////////////////////
+        // opgave 2.7                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.7:");
         System.out.println("Enter the number of minutes: ");
 
@@ -130,11 +144,12 @@ public class Main {
 
         System.out.println(total_days/DAYS_PER_YEAR);
         System.out.println(total_days%DAYS_PER_YEAR);
-*/
 
-        // opgave 2.8
 
-/*
+        ///////////////////////////////////
+        // opgave 2.8                    //
+        ///////////////////////////////////
+
         System.out.println("\n----\nOPGAVE 2.8:");
 
         inputObj = new Scanner(System.in);
@@ -165,10 +180,12 @@ public class Main {
 
         // Display results
         System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + " GMT");
-*/
 
-/*
-        // opgave 2.9
+
+
+        ///////////////////////////////////
+        // opgave 2.9                    //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.9:");
 
         System.out.println("Enter v0, v1, and t: ");
@@ -188,22 +205,11 @@ public class Main {
         acceleration = (velocity2-velocity1)/time;
 
         System.out.printf("The average acceleration is %f", acceleration);
-*/
 
-        // opgave 2.10
-
-        /*(Science: calculating energy) Write a program that calculates the energy needed
-        to heat water from an initial temperature to a final temperature. Your program
-        should prompt the user to enter the amount of water in kilograms and the initial
-        and final temperatures of the water. The formula to compute the energy is
-
-        Q = M * (finalTemperature – initialTemperature) * 4184
-
-        where M is the weight of water in kilograms, temperatures are in degrees Celsius,
-        and energy Q is measured in joules.
-        */
-
-/*        System.out.println("\n----\nOPGAVE 2.10:");
+        ///////////////////////////////////
+        // opgave 2.10                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.10:");
 
         double Q;
         double M;
@@ -225,7 +231,9 @@ public class Main {
 
         System.out.printf("The energy needed is %.1f", Q);*/
 
-/*        // opgave 2.11
+        ///////////////////////////////////
+        // opgave 2.11                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.11:");
 
         inputObj = new Scanner(System.in);
@@ -256,9 +264,11 @@ public class Main {
 
             System.out.printf("year: %d, population: %d\n", i, people);
 
-        }*/
+        }
 
-/*        // opgave 2.12
+        ///////////////////////////////////
+        // opgave 2.12                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.12:");
 
         double acceleration, speed, length;
@@ -277,9 +287,10 @@ public class Main {
 
         System.out.printf("The minimum runway length for this airplane is %.3f", length);
 
-        */
 
-/*        // opgave 2.13
+        ///////////////////////////////////
+        // opgave 2.13                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.13:");
 
         int monthlySavings;
@@ -299,9 +310,11 @@ public class Main {
 
             System.out.printf("month %d your account have $%.2f\n", i, accountSum);
 
-        }*/
+        }
 
-/*        // opgave 2.14
+        ///////////////////////////////////
+        // opgave 2.14                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.14:");
 
         double pounds;
@@ -330,7 +343,9 @@ public class Main {
 
         System.out.printf("bmi = %f\n", bmi);*/
 
-/*        // opgave 2.15
+        ///////////////////////////////////
+        // opgave 2.15                   //
+        ///////////////////////////////////
         System.out.println("\n----\nOPGAVE 2.15:");
 
         double x1, x2, y1, y2;
@@ -343,27 +358,23 @@ public class Main {
 
         System.out.println(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));*/
 
-        /*2.16 (Geometry: area of a hexagon) Write a program that prompts the user to enter the
-        side of a hexagon and displays its area. The formula for computing the area of a
-        hexagon is*/
+        ///////////////////////////////////
+        // opgave 2.16                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.16:");
 
-        /*System.out.println("\n----\nOPGAVE 2.16:");
         inputObj = new Scanner(System.in);
         System.out.println("enter the side lenght of the hexagon: ");
         double side_lenght = inputObj.nextDouble();
 
         double Area = ( (3 * Math.sqrt(3)) / 2 ) * Math.pow(side_lenght,2);
 
-        System.out.println(Area);*/
+        System.out.println(Area);
 
-        /*2.17 (Science: wind-chill temperature) How cold is it outside? The temperature alone
-         is not enough to provide the answer. Other factors including wind speed, relative
-         humidity, and sunshine play important roles in determining coldness outside.
-         In 2001, the National Weather Service (NWS) implemented the new wind-chill
-         temperature to measure the coldness using temperature and wind speed. The
-         formula is*/
-
-/*        System.out.println("\n----\nOPGAVE 2.17:");
+        ///////////////////////////////////
+        // opgave 2.17                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.17:");
         inputObj = new Scanner(System.in);
 
         double Twc;
@@ -388,10 +399,11 @@ public class Main {
             System.out.printf("%d\t%d\t%.0f\n", i, i+1, Math.pow(i, i+1));
         }*/
 
-        /*2.19 (Geometry: area of a triangle) Write a program that prompts the user to enter
-        three points (x1, y1), (x2, y2), (x3, y3) of a triangle and displays its area.
-        The formula for computing the area of a triangle is*/
-/*        inputObj = new Scanner(System.in);
+        ///////////////////////////////////
+        // opgave 2.19                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.19:");
+        inputObj = new Scanner(System.in);
 
         String triangle_raw = inputObj.nextLine();
         String[] triangle_splitted = triangle_raw.split(" ");
@@ -412,18 +424,14 @@ public class Main {
         double s =(side1+side2+side3)/2;
         double area = Math.sqrt( s*(s-side1) * (s-side2) * (s-side3) );
 
-        System.out.printf("The area of the triangle is %f\n", area);*/
+        System.out.printf("The area of the triangle is %f\n", area);
 
-        /*2.20 (Financial application: calculate interest) If you know the balance and the annual
-        percentage interest rate, you can compute the interest on the next monthly payment
-        using the following formula:
+        ///////////////////////////////////
+        // opgave 2.2                    //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.2:");
 
-        interest = balance * (annualInterestRate/1200)
-
-        Write a program that reads the balance and the annual percentage interest rate and
-        displays the interest for the next month.*/
-
-/*        System.out.println(1000*(3.5/1200));
+        System.out.println(1000*(3.5/1200));
 
         String balance_interest_raw = inputObj.nextLine();
         String[] balance_interest_splitted = balance_interest_raw.split(" ");
@@ -433,13 +441,14 @@ public class Main {
 
         double interest = balance*(annualInterestRate/1200);
 
-        System.out.printf("the interst is %f\n", interest);*/
+        System.out.printf("the interst is %f\n", interest);
 
-        /*2.21 (Financial application: calculate future investment value) Write a program that
-        reads in investment amount, annual interest rate, and number of years, and displays
-        the future investment value using the following formula:*/
+        ///////////////////////////////////
+        // opgave 2.21                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.21:");
 
-/*        inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
         System.out.println("Enter investment amount: ");
         double investmentAmount = inputObj.nextDouble();
@@ -452,14 +461,14 @@ public class Main {
 
         double futureInvestmentValue = investmentAmount * Math.pow((1 + monthlyInterestRate),numberOfYears*12);
 
-        System.out.printf("Accumulated value is $%f\n",futureInvestmentValue);*/
+        System.out.printf("Accumulated value is $%f\n",futureInvestmentValue);
 
-        /*2.22 (Financial application: monetary units) Rewrite Listing 2.10, ComputeChange
-        .java, to fix the possible loss of accuracy when converting a double value to an
-        int value. Enter the input as an integer whose last two digits represent the cents.
-        For example, the input 1156 represents 11 dollars and 56 cents.*/
+        ///////////////////////////////////
+        // opgave 2.22                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.22:");
 
-/*        inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
         // Receive the amount
         System.out.println("Enter an amount in double, for example 11.56: ");
@@ -492,13 +501,14 @@ public class Main {
         System.out.println("    " + numberOfQuarters + " quarters ");
         System.out.println("    " + numberOfDimes + " dimes");
         System.out.println("    " + numberOfNickels + " nickels");
-        System.out.println("    " + numberOfPennies + " pennies");*/
+        System.out.println("    " + numberOfPennies + " pennies");
 
-        /*2.23 (Cost of driving) Write a program that prompts the user to enter the distance to
-        drive, the fuel efficiency of the car in miles per gallon, and the price per gallon,
-        and displays the cost of the trip.*/
+        ///////////////////////////////////
+        // opgave 2.23                   //
+        ///////////////////////////////////
+        System.out.println("\n----\nOPGAVE 2.23:");
 
-/*        inputObj = new Scanner(System.in);
+        inputObj = new Scanner(System.in);
 
         System.out.println("Enter the driving distance: ");
         double distance = inputObj.nextDouble();
@@ -511,7 +521,7 @@ public class Main {
 
         double price = (distance/mpg)*gallon_price;
 
-        System.out.printf("The cost of driving is $%.2f\n",price);*/
+        System.out.printf("The cost of driving is $%.2f\n",price);
 
     }
 
