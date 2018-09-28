@@ -15,11 +15,8 @@ public class two_one_two {
 
         System.out.println("Enter speed and acceleration: ");
 
-        String twoDotOneTwoInput = inputObj.nextLine();
-        String[] twoDotOneTwoInputSplit = twoDotOneTwoInput.split(" ");
-
-        speed = Double.parseDouble( twoDotOneTwoInputSplit[0] );
-        accelerationtwodotonetwo = Double.parseDouble( twoDotOneTwoInputSplit[1] );
+        speed = inputObj.nextDouble();
+        accelerationtwodotonetwo = inputObj.nextDouble();
 
         lengthsomeshity = Math.pow(speed,2)/(2*accelerationtwodotonetwo);
 

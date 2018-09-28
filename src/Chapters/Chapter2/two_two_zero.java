@@ -14,11 +14,8 @@ public class two_two_zero {
 
         System.out.println(1000*(3.5/1200));
 
-        String balance_interest_raw = inputObj.nextLine();
-        String[] balance_interest_splitted = balance_interest_raw.split(" ");
-
-        double balance = Double.parseDouble(balance_interest_splitted[0]);
-        double annualInterestRate = Double.parseDouble(balance_interest_splitted[1]);
+        double balance = inputObj.nextDouble();
+        double annualInterestRate = inputObj.nextDouble();
 
         double interest = balance*(annualInterestRate/1200);
 

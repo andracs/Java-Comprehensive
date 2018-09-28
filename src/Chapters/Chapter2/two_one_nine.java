@@ -11,17 +11,14 @@ public class two_one_nine {
         System.out.println("\n----\nOPGAVE 2.19:");
         Scanner inputObj = new Scanner(System.in);
 
-        String triangle_raw = inputObj.nextLine();
-        String[] triangle_splitted = triangle_raw.split(" ");
+        double x1 = inputObj.nextDouble();
+        double y1 = inputObj.nextDouble();
 
-        double x1 = Double.parseDouble(triangle_splitted[0]);
-        double y1 = Double.parseDouble(triangle_splitted[1]);
+        double x2 = inputObj.nextDouble();
+        double y2 = inputObj.nextDouble();
 
-        double x2 = Double.parseDouble(triangle_splitted[2]);
-        double y2 = Double.parseDouble(triangle_splitted[3]);
-
-        double x3 = Double.parseDouble(triangle_splitted[4]);
-        double y3 = Double.parseDouble(triangle_splitted[5]);
+        double x3 = inputObj.nextDouble();
+        double y3 = inputObj.nextDouble();
 
         double side1 = calcPointDistance(x1,y1, x2,y2);
         double side2 = calcPointDistance(x2,y2, x3,y3);

@@ -12,11 +12,8 @@ public class two_five {
 
         System.out.println("Enter the subtotal and a gratuity rate: ");
 
-        String twoDotFiveInput = inputObj.nextLine();
-        String[] twoDotFiveInputSplit = twoDotFiveInput.split(" ");
-
-        double subtotal = Double.parseDouble(twoDotFiveInputSplit[0]);
-        double gratuityRate = Double.parseDouble(twoDotFiveInputSplit[1]);
+        double subtotal = inputObj.nextDouble();
+        double gratuityRate = inputObj.nextDouble();
 
         double gratuity = (gratuityRate/100)*subtotal;
         double total = subtotal+gratuity;

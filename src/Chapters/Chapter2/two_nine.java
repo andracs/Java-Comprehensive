@@ -15,13 +15,10 @@ public class two_nine {
 
         Scanner inputObj = new Scanner(System.in);
 
-        String twoDotNineInput = inputObj.nextLine();
-        String[] twoDotNineInputSplit = twoDotNineInput.split(" ");
+        velocity1 = inputObj.nextDouble();
+        velocity2 = inputObj.nextDouble();
 
-        velocity1 = Double.parseDouble( twoDotNineInputSplit[0] );
-        velocity2 = Double.parseDouble( twoDotNineInputSplit[1] );
-
-        time = Double.parseDouble( twoDotNineInputSplit[2] );
+        time = inputObj.nextDouble();
 
         acceleration = (velocity2-velocity1)/time;
 
